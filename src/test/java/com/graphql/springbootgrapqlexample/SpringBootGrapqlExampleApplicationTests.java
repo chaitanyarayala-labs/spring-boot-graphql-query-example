@@ -1,4 +1,4 @@
-package com.techprimers.graphql.springbootgrapqlexample;
+package com.graphql.springbootgrapqlexample;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

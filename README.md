@@ -8,36 +8,52 @@ Update: Upgraded to Java 11 and Graph QL to 5+ version dependency
 
 ## Sample GraphQL Scalar Queries
 - Accessible under `http://localhost:8091/rest/books`
-- Usage for `allBooks`
+- Usage for `allBooks` with authors
 ```
 {
    allBooks {
      isn
      title
-     authors
+     authors {
+        id
+        firstName
+        lastName
+     }
      publisher
    }
  }
 ```
-- Usage for `book`
+- Usage for `book` with authors
 ```
   {
    book(id: "123") {
      title
-     authors
+     authors {
+        id
+        firstName
+        lastName
+     }
      publisher
    }
 ```
-- Combination of both `allBooks` and `book`
+- Combination of both `allBooks` and `book` with authors
 ```
 {
    allBooks {
      title
-     authors
+     authors {
+        id
+        firstName
+        lastName
+     }
    }
    book(id: "124") {
      title
-     authors
+     authors {
+        id
+        firstName
+        lastName
+     }
      publisher
    }
  }

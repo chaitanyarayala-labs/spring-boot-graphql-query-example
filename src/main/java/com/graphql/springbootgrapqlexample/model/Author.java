@@ -1,4 +1,4 @@
-package com.techprimers.graphql.springbootgrapqlexample.model;
+package com.graphql.springbootgrapqlexample.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -15,13 +15,10 @@ import javax.persistence.Table;
 @Getter
 @Table
 @Entity
-public class Book {
+public class Author {
 
     @Id
-    private String isn;
-    private String title;
-    private String publisher;
-    private String[] authors;
-    private String publishedDate;
-
+    private String id;
+    private String firstName;
+    private String lastName;
 }

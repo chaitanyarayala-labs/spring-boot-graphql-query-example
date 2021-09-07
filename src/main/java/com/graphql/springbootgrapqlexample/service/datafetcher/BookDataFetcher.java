@@ -1,7 +1,7 @@
-package com.techprimers.graphql.springbootgrapqlexample.service.datafetcher;
+package com.graphql.springbootgrapqlexample.service.datafetcher;
 
-import com.techprimers.graphql.springbootgrapqlexample.model.Book;
-import com.techprimers.graphql.springbootgrapqlexample.repository.BookRepository;
+import com.graphql.springbootgrapqlexample.model.Book;
+import com.graphql.springbootgrapqlexample.repository.BookRepository;
 import graphql.schema.DataFetcher;
 import graphql.schema.DataFetchingEnvironment;
 import org.springframework.beans.factory.annotation.Autowired;
